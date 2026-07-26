@@ -9,7 +9,6 @@
     "ui-tui/packages/*",
     "web",
     "tests-js"
-    "packages/*"
   ],
   "scripts": {
     "postinstall": "echo '✅ Browser tools ready. Run: python run_agent.py --help'",
@@ -24,8 +23,7 @@
     "audit:fix:web": "npm audit fix --workspace web",
     "audit:fix:tui": "npm audit fix --workspace ui-tui",
     "check": "npm run --ws check",
-    "fix": "npm run --ws fix"
-    "start": "node index.js"
+    "fix": "npm run --ws fix",
     "build": "tsup src/index.ts",
     "start": "node dist/index.js"
   },
