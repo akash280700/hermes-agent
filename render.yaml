@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: hermes-agent-web
+    runtime: node
+    plan: free
+    buildCommand: >-
+      pnpm install &&
+      pnpm --filter web build
+    startCommand: >-
+      pnpm --filter web preview
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "26.5.0"
+    routes:
+      - path: /
+        destination: :3000
