@@ -24,6 +24,7 @@
     "audit:fix:tui": "npm audit fix --workspace ui-tui",
     "check": "npm run --ws check",
     "fix": "npm run --ws fix"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
