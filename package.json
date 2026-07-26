@@ -9,6 +9,7 @@
     "ui-tui/packages/*",
     "web",
     "tests-js"
+    "packages/*"
   ],
   "scripts": {
     "postinstall": "echo '✅ Browser tools ready. Run: python run_agent.py --help'",
