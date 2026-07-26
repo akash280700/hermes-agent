@@ -3,16 +3,8 @@ services:
     name: hermes-agent-web
     runtime: node
     plan: free
-    buildCommand: >-
-      pnpm install &&
-      pnpm --filter web build
-    startCommand: >-
-      npx http-server hermes_cli/web_dist -p 3000 -g
+    buildCommand: pnpm install && pnpm --filter web build
+    startCommand: npx http-server hermes_cli/web_dist -p $PORT
     envVars:
       - key: NODE_ENV
         value: production
-      - key: NODE_VERSION
-        value: "26.5.0"
-    routes:
-      - path: /
-        destination: :3000
