@@ -25,6 +25,8 @@
     "check": "npm run --ws check",
     "fix": "npm run --ws fix"
     "start": "node index.js"
+    "build": "tsup src/index.ts",
+    "start": "node dist/index.js"
   },
   "repository": {
     "type": "git",
