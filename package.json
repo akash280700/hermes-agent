@@ -36,6 +36,7 @@
   "homepage": "https://github.com/NousResearch/Hermes-Agent#readme",
   "dependencies": {
     "@streamdown/math": "^1.0.2",
+    "@supabase/agent-skills": "^1.0.0",
     "agent-browser": "^0.26.0"
   },
   "overrides": {
