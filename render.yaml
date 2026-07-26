@@ -7,7 +7,7 @@ services:
       pnpm install &&
       pnpm --filter web build
     startCommand: >-
-      pnpm --filter web preview
+      npx http-server hermes_cli/web_dist -p 3000 -g
     envVars:
       - key: NODE_ENV
         value: production
